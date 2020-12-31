@@ -20,6 +20,7 @@ from dj_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #    path('dj/',include('dj_app.urls')),
-       path('',views.index)
+       path('',views.index),
+       path('page',views.page)
     #    path('abc', views.new, name='new'),
 ]
