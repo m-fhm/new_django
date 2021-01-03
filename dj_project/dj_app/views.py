@@ -3,11 +3,11 @@ from django.http import HttpResponse
 from dj_app import forms
 
 # Create your views here.
-def index(abc):
+def index(request):
     context={}
     context['name']="this is our trila "
-    return render(abc,'index.html',context)
-def new(abc):
+    return render(request,'index.html',context)
+def new(request):
     return HttpResponse("<h1> this for new of dj_app</h1>")
 def page(request):
     form=forms.myform()
