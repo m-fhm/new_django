@@ -20,4 +20,6 @@ from new_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="index"),
+    path('view',views.view,name="view"),
+    path('edit/<int:id>',views.edit,name="view"),
 ]

@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-   
-    <form method="POST">
-        {{fm}}
-        {% csrf_token %}
-        <input type="submit">
-    </form>
+    {% for item in data %}
+    {{item.id}}
+    {{item.name}}
+    {{item.email}}
+    <a href="edit/{{item.id}}">edit</a>
+    <br>
+    {% endfor %}
     
+    <br>
 </body>
 </html>
