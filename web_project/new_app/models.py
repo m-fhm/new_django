@@ -5,4 +5,4 @@ class school(models.Model):
     name = models.CharField(max_length=20)
     address = models.CharField(max_length=50)
     email = models.EmailField()
-    smmary= models.TextField()
+    summary= models.TextField()

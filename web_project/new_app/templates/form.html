@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% block formData %}
+<form method="POST">
+    <div class="container">
+        <div class="col-md-10 m-auto">
+            <div class="row">
+                <label>Name</label>
+                {{fm.name}}
+            </div>
+            <div class="row">
+                <label>Address</label>
+                {{fm.address}}
+            </div>
+            <div class="row">
+                <label>Email</label>
+                {{fm.email}}
+            </div>
+            <div class="row">
+                <label>Summary</label>
+                {{fm.summary}}
+            </div>
+            {% csrf_token %}
+            <br>
+            <div class="row">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
